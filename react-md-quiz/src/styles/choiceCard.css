@@ -1,0 +1,62 @@
+.choiceCard {
+  padding: 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: white;
+  font-weight: 500;
+}
+
+.choiceCard:hover {
+  border-color: #60a5fa;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.choiceCard.selected {
+  border-color: #6366f1;
+  background-color: #e0e7ff;
+}
+
+.choiceCard.correct {
+  border-color: #22c55e;
+  background-color: #dcfce7;
+  color: #166534;
+  font-weight: bold;
+}
+
+.choiceCard.incorrect {
+  border-color: #ef4444;
+  background-color: #fee2e2;
+  color: #991b1b;
+  font-weight: bold;
+}
+
+.choiceCard:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.choices {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.choice {
+  background: #eef2ff;
+  border-radius: 16px;
+  padding: 18px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+
+.choice:hover {
+  background: #c7d2fe;
+  border-color: #6366f1;
+  transform: scale(1.03);
+}
