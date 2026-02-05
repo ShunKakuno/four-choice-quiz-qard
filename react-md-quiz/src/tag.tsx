@@ -9,7 +9,7 @@ export function Tag({ categories }: Categories) {
   return (
     <>
         {categories.length > 0 && (
-        <div className="tags">
+        <div>
             {categories.map(category => (
             <span key={category} className="tag">{category}</span>
             ))}
